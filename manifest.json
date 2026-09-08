@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Dice Optimizer Pro",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "cookies"],
+  "host_permissions": ["https://www.online-dice.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.online-dice.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
